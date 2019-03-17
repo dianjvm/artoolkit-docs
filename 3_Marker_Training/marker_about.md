@@ -1,4 +1,4 @@
-#About the Traditional Template Square Marker
+# About the Traditional Template Square Marker
 ARToolKit applications allow virtual imagery to be superimposed on the live environment through a video or see-through display. Although this appears magical, the secret is in the black square, referred to as a **square marker**. A square marker is made up of a light colored, surrounding, **padding**, usually white, surrounded by a thick dark colored, usually black, **border** and an embedded, high contrast, image content, referred to as a **pattern**. The pattern is what makes a square marker unique. Square markers are recognized, tracked and is used to calculate position in 3D space. The ARToolKit augmented reality works as follows:
 
 1.  The camera captures video of the camera view and sends it to the computer.
@@ -12,16 +12,16 @@ The figure below summarizes these steps. ARToolKit is able to perform this camer
 
 ![The ARToolKit tracking process][diagram]
 
-####Some Terminology
+#### Some Terminology
 The traditional template marker can be applied to several marker types of varying names that can lead to some terminology confusion. Some of these markers types that share many similar characteristics are known separately as square markers, 2D-barcodes and matrix markers. This page is about square markers.
 
-##Limitations
+## Limitations
 While vision-based tracking is exciting in enabling so many applications, there are limitations which affect ARToolKit and other vision based systems.
 
-###Occlusion
+### Occlusion
 Naturally the virtual objects will only appear when the marker being tracked is in camera view. This may limit the size or movement of the virtual objects. It also means that if users cover up, from the camera's view, part of the marker with an obstruction, the composited virtual model disappears. Also, if the marker borders are moved outside the camera's view, the marker will be clipped, no longer having four corners. As a result, recognition will fail. 
 
-###Range
+### Range
 There are also range issues in optical tracking, since as markers are move further away from the camera, the markers occupy fewer pixels in the camera's view and results in having insufficient detail for recognition, tracking and identification. The larger the physical embedded marker pattern, the further away the embedded marker pattern can be detected and so the greater the track-ability of the marker.
 
 Table 1 shows some typical maximum ranges for square markers of different sizes. These results were gathered by scanning square markers of increasing size, placing them perpendicular to the camera and increasing the distance between the camera and marker until the marker is no longer recognized.
